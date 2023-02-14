@@ -27,7 +27,7 @@ main {
     color: #562EFF;
     font-size: 24px;
     font-weight: 800;
-    padding: 25px 0 25px 30px;
+    padding: 25px 0px 25px 30px;
 }
 
 .players {
@@ -146,4 +146,92 @@ a {
 
 .clock {
     padding-left: 10px;
+}
+
+/***************** Media Queries *****************/
+
+/***************** For Small Device *****************/
+
+@media only screen and (max-width: 576px) {
+    .all-header {
+        font-size: 18px;
+        font-weight: 800;
+        padding: 15px 0px 10px 15px;
+    }
+
+    .top-players {
+        width: 100%;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 15px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .top-blog {
+        padding-left: 15px;
+    }
+
+    .blog-details {
+        padding-left: 5px;
+    }
+
+    .blog-title {
+        margin-top: 5px;
+    }
+
+    .border {
+        width: 100%;
+    }
+
+    .latest-courses {
+        display: none;
+    }
+}
+
+/***************** For Medium Device *****************/
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .all-header {
+        font-size: 18px;
+        font-weight: 800;
+        padding: 20px 0px 15px 20px;
+    }
+
+    .top-players {
+        width: 100%;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 20px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .top-blog {
+        padding-left: 20px;
+    }
+
+    .blog-details {
+        padding-left: 10px;
+    }
+
+    .blog-title {
+        margin-top: 10px;
+    }
+
+    .border {
+        width: 100%;
+    }
+
+    .latest-courses {
+        display: none;
+    }
 }
